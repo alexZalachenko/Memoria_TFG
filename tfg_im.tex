@@ -26,6 +26,12 @@
 \definecolor{base}{RGB}{35,31,32}
 \usepackage{pdfpages}
 
+\usepackage[backend=bibtex,style=verbose-trad2]{biblatex} % Use biblatex package
+%\bibliographystyle{apalike}
+\bibliography{bibliografia/bibliografia} % The name of the .bib file (name without .bib)
+%%\nocite{*} %incluye TODOS los documentos de la base de datos bibliográfica sean o no citados en el texto
+%\bibliography{bibliografia/bibliografia}\addcontentsline{toc}{chapter}{Bibliografía} %sustituir bibliografía con el nombre del fichero bibtex con la bibliografía
+
 
 %Instrucciones para poder escribir código y mostrarlo de manera elegante:
 \definecolor{gray97}{gray}{.97}
@@ -195,6 +201,10 @@ pdfproducer = {pdflatex}
 \mainmatter %entre frontmatter y mainmatter, la numeración es en romanos.
 
 %a continuación se propone un esquema de trabajo que puede ser alterado justificadamente.
+
+
+
+
 \input{capitulos/Introduccion}
 \input{capitulos/marcoteorico}
 %input{capitulos/objetivos}
@@ -203,14 +213,12 @@ pdfproducer = {pdflatex}
 %input{capitulos/resultados}
 %input{capitulos/conclusiones}
 
-%%\nocite{*} %incluye TODOS los documentos de la base de datos bibliográfica sean o no citados en el texto
-\bibliography{bibliografia/bibliografia}\addcontentsline{toc}{chapter}{Bibliografía} %sustituir bibliografía con el nombre del fichero bibtex con la bibliografía
-\bibliographystyle{apalike}
-%
+
 \appendix
 \input{anexos/anexo_I}
 %\input{glosario/entradas_glosario}
 % \addcontentsline{toc}{chapter}{Glosario} %si se usa glosario hay que añadirlo al índice
 % \printglossary %muestra el glosario
+\printbibliography
 
 \end{document}
