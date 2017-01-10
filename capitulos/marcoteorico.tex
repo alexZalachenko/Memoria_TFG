@@ -1,158 +1,40 @@
 \chapter{Marco Teórico}
 \label{marcoteorico}
 
-El contenido de este capítulo es una especie de muestrario de cosas que puedes hacer con \LaTeX.  Por ejemplo, incluir una cita bibliográfica   \cite{BOE_IM_UA} dentro del texto. En esta página de demostración también puedes encontrar información útil acerca de cómo escribir con  \LaTeX.\footnote{En http://metodos.fam.cie.uva.es/~latex/apuntes/apuntes.html hay unos buenos apuntes al respecto.}
+Como apoyo a los cursos formativos sobre emprendimiento han surgido multitud de juegos para enseñar y aplicar de forma práctica conceptos sobre la creación de iniciativas empresariales.\\
+Estos juegos son una parte importante de la formación ya que permiten aprender de forma más amena. Además el utilizar de forma práctica los conocimientos adquiridos ayuda a que se entiendan mejor y se recuerden durante más tiempo.
+Para los juegos mencionados anteriormente existen varios formatos que serán explicados en detalle a continuación. 
 
-Hacer una lista es simple en \LaTeX. Para ello has de crear un entorno (así se llama) itemize con
-\begin{verbatim}
+\section{Actividades en grupo}
+
+Es el tipo más sencillo y tradicional. Solo necesita de los participantes y una actividad previamente elegida. Una de las ventajas que tiene este tipo de actividades es que ponen a las personas en contacto directo, de modo que tienen que dejar a un lado la verguenza e interactuar como lo harían ante clientes, inversores o trabajadores. Además estos encuentros pueden servir para hacer contactos útiles en un futuro.\\
+Este tipo de actividades potencian las habilidades sociales y la creatividad de los participantes ya que los únicos elementos del juego son las personas, y las mecánicas del juego son sus discursos, explicaciones, gestos, actuaciones, etc.
+
+\section{Juegos de mesa}
+
+Los juegos de mesa mantienen muchos de los aspectos positivos de las actividades en grupo ya que también son presenciales, con las ventajas y desventajas que ello conlleva.\\
+Además estos juegos pueden ser más divertidos debido a que introducen elementos como tableros, cartas, textos o ilustraciones entre otros elementos. Son especialmente interesantes para personas que no se sientan cómodas con las asctividades en grupo debido al alto grado de interacción que demandan.
+
+También es más fácil el uso de mecánicas complejas ya que hay instrumentos para contabilizar y describir el estado del juego: dados para contar el número de vidas, poder mágico o turnos; tableros con diferentes casillas, territorios o zonas; fichas de jugador con parámetros, habilidades, y características.
+
+Actualmente hay numerosos juegos de mesa entre los que destacaremos:
 \begin{itemize}
-...
-\end{itemize}
-\end{verbatim}
-Y dentro de esa estructura, añadir cada elemento de la lista precedido de 
-\begin{verbatim}
-\item primer item de lista
-\item segundo item de lista
-...
-\item ultimo item de lista
-\end{verbatim}
-\section{Elaboración de listas.}
+         \item Colonos de Catán: \\
 
-Es importante que revises este texto tal como aparece en la plantilla y relaciones el aspecto que tiene el PDF final con cómo está escrito el documento \LaTeX.
+Apto para 6 jugadores (a través de una expansión), este juego de gestión de recursos y comercio nos pone en la piel de un colono que debe ir construyendo sus aldeas y caminos. En Colonos de Catán prima tu habilidad para negociar por el contrario y tu capacidad de estrategia a medio y largo plazo. \cite{faceentrepreneurship2016}
 
-Aquí va una lista:
-\begin{itemize}
-    \item Ingeniería Informática.
-    \item Ingeniería Sonido e Imagen en Telecomunicación.
-    \item Ingeniería Multimedia.
-    \begin{itemize}
-         \item Mención: Creación y ocio digital.
-         \item Mención: Gestión de Contenidos.
-    \end{itemize}
+El Catán [...] evita el enfrentamiento tan directo y obliga a negociar para ganar.
+
+Ahí reside una de las claves, en el hecho que de entrada nadie posea recursos suficientes de todos los tipos para progresar. En cada turno se comercia con las materias primas, un trueque básico que permite saber cómo funciona un mercado libre en el que cada uno tiene sus propios intereses. \cite{albertini2015}
+
+Lleva unas 18 millones de copias vendidas [...] Ha aparecido en 'The Big Bang Theory' [...] Mark Zuckerberg se ha declarado adicto, es uno de esos juegos a los que debes jugar si no quieres ser el ''margi" de Silicon Valley \cite{albertini2015}
+
+         \item Pandemia: 
+En Pandemia somos un grupo de hasta 4 científicos que tienen que mantener a raya una serie de virus, o de lo contrario la Humanidad tendrá un grave problema. [...] debes aprender a formar equipo y hacerlo funcionar si quieres tener éxito en tu startup. En este sentido, Pandemia puede ser la terapia perfecta para ti y tu equipo ya que o colaboráis y funcionáis perfectamente engrasados o correréis el riesgo de fracasar. Y también en la vida real. \cite{faceentrepreneurship2016}
+
+         \item Flea market:
+juego de dados en el que tendrás que descubrir los tesoros escondidos en un mercado de segunda mano. Tú serás el cliente que compra, y tu objetivo es adquirir bienes lo más barato posible para venderlos por más dinero una vez el dado de la demanda dice que ya son populares de nuevo. \cite{mariagonzalez2015}
 \end{itemize}
 
-Ahora veremos otra estructura más: las tablas.
 
-\section{Inserción de tablas}
-
-Aquí va una tabla\footnote{En http://www.tablesgenerator.com/ se puede encontrar un generador On-Line de tablas para \LaTeX} para que se vea cómo insertar una tabla simple dentro del documento.
-
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{lllll}
-&columna A&columna B&columna C\\
-\hline
-fila 1&fila 1, columna A & fila 1, columna B & fila 1, columna C\\
-fila 2&fila 2, columna A & fila 2, columna B & fila 2, columna C\\
-fila 3&fila 3, columna A & fila 3, columna B & fila 3, columna C\\ \hline
-\end{tabular}
-\end{center}
-\caption{Ejemplo de tabla.}
-\label{tabladeejemplo}
-\end{table}
-
-\LaTeX usa un sistema de parámetros para ``decorar'' las tablas. Puedes consultar estos parámetros en la tabla \ref{tabla_parametros} de la página \pageref{tabla_parametros}. La tabla se ubicará donde, a juicio de \LaTeX, menos moleste por lo que puede no aparecer necesariamente donde se ha insertado en el texto original. 
-
-\begin{table}
-\begin{center}
-\begin{tabular}{|c|p{0.8\textwidth}|}
-\hline
-Parámetro & \multicolumn{1}{c|}{Significado} \\ \hline
-\texttt{h} & Situa el elemento flotante \emph{preferentemente}
-(es decir, si es posible) en la situación exacta donde se incluye este \\
-\texttt{t} & Situa el elemento en la parte de arriba de la página \\
-\texttt{b} & Situa el elemento en la parte de abajo de la página \\
-\texttt{p} & Situa el elemento en una página aparte dedicada sólo a
-elementos flotantes; en el caso del formato \texttt{article},
-ésta se situa al final del documento, mientras que para al book es
-colocada al final de cada capítulo \\ \hline
-\end{tabular}
-\end{center}
-\caption{Parámetros optativos de los entornos flotantes}
-\label{tabla_parametros}
-\end{table}
-
-
-
-\section{Inserción de figuras}
-
-Las figuras son un caso un poco especial ya que \LaTeX busca el mejor lugar para ponerlas, no siendo necesariamente el ligar donde está la referencia. Por ello es importante añadirle un ``caption'' y un ``label'' para poder hacer referencia a ellas en el párrafo correspondiente. Nosotros ponemos la referencia a la figura \ref{logo_im} que está en la página \pageref{logo_im}. justo aquí debajo, pero \LaTeX puede que la ubique en otro lugar.
-
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.25]{imagenes/logoim.jpg}
-\caption{Logo de Ingeniería  Multimedia.}
-\label{logo_im}
-\end{center}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\includegraphics[scale=0.25]{imagenes/logoeps.jpg}
-\caption{Logo de la EPS.}
-\label{logo_eps}
-\end{center}
-\end{figure}
-
-\section{Inserción de código}
-A veces tendrás que insertar algún pedazo de código fuente para explicar algo relacionado con él. No sustituyas explicaciones con enormes listados de código. Si pones algo de código en tu TFG que sea para demostrar algo o explicar alguna solución.
-
-\LaTeX te ayuda a escribir código de manera que su presentación tenga las marcas y tabulaciones propias de este tipo de texto. Para ello, debes poner el código que escribas DENTRO de un entorno  que se llama ``listings''.  La plantilla ya tiene una serie de instrucciones para incluir el paquete ``listings'' y añadirle algunos modificadores por lo que no tienes que incluirlo tú. Simplemente, mete tu código en el entorno ``lstlisting'' y ya está. Puedes indicar el lenguaje en el que está escrito el código y así \LaTeX lo mostrará mejor. Veamos un ejemplo en la figura \ref{C_code}:
-
-Si pones 
-\begin{verbatim}
-\begin{lstlisting}[style=C, caption={ejemplo código C},label=C_code]
-#include <stdio.h>
-int main(int argc, char* argv[]) {
-  puts("Hola mundo!");
-}
-\end{lstlisting}
-\end{verbatim}
-
-El resultado será:
-\begin{lstlisting}[style=C, caption={ejemplo código C},label=C_code]
-#include <stdio.h>
-int main(int argc, char* argv[]) {
-  puts("Hola mundo!");
-}
-\end{lstlisting}
-
-Por supuesto, puedes mejorar esta presentación utilizando mas modificadores. Esta información y mucha más puede ser encontrada en \cite{listing_packagge} y en \cite{heinz1listings}.
-
-Otro ejemplo, ahora para mostrar código PHP, sería escribir en tu fichero \LaTeX lo siguiente:
-\begin{verbatim}
- \begin{lstlisting}[style=PHP, caption={ejemplo código PHP},label=PHP_code]
- /* 
-Ejemplo de código en PHP para escribir tu primer programa en este lenguaje
-Copia este código en tu ordenador y ejecútalo
-*/
-<html>
-  <head>
-    <title>Prueba de PHP</title>
-  </head>
-  <body>
-    <?php echo '<p>Hola Mundo</p>'; ?> //esto lo escribe TODO el mundo
-  </body>
-</html>
- \end{lstlisting}
-\end{verbatim}
- 
- y el resultado es: (ver listado \ref{PHP_code})
- 
- \begin{lstlisting}[style=PHP, caption={ejemplo código PHP},label=PHP_code]
-/* 
-Ejemplo de código en PHP para escribir tu primer programa en este lenguaje. Copia este código en tu ordenador y ejecútalo
-*/
- <html>
-  <head>
-    <title>Prueba de PHP</title>
-  </head>
-  <body>
-    <?php echo '<p>Hola Mundo</p>'; ?> //esto lo escribe TODO el mundo
-  </body>
-</html>
- \end{lstlisting}
- 
- Observa cómo \LaTeX ha puesto los comentarios en gris y ajustado el código para que se muestre más claro.
- 
- Si quieres añadir código en otros lenguajes, cambia el comando que dice ``style=nombredellenguaje'' por ``languaje=nombredelnuevolenguaje''.
+\section{Videojuegos}

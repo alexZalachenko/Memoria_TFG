@@ -1,0 +1,120 @@
+\chapter{Objetivos}
+
+
+
+
+En el siguiente capítulo (página \pageref{marcoteorico}) encontrar
+
+
+\begin{description}
+\item[Preámbulo:] se describirán brevemente la motivación que ha originado la realización del TFG/TFM, así como de una breve descripción de los objetivos generales que se quieren alcanzar con el trabajo presentado.
+\item[Agradecimientos:] se podrá añadir las hojas necesarias para realizar los agradecimientos, a veces obligatorios, a las entidades y organismos colaboradores.
+\item[Dedicatoria:] se podrá añadir una única hoja con dedicatorias, su alineación será derecha y centradas de forma distribuida en la página.
+\item[Citas:] (frases célebres) se podrá añadir una única hoja con citas, su alineación será derecha y centradas de forma distribuida en la página.
+\item[Índices:] cada índice debe comenzar en una nueva página, se incluirán los índices que se estimen necesarios (conforme UNE 50111:1989), en este orden:
+\begin{description}
+\item[Índice de contenidos:] (obligatorio siempre) se incluirá un índice de las secciones de las que se componga el documento, la numeración de las 
+divisiones y subdivisiones utilizarán cifras arábigas (según UNE 50132:1994) y harán mención a la página del documento donde se ubiquen.
+\item[Índice de figuras:] si el documento incluye figuras se podrá incluir también un índice con su relación, indicando la página donde se ubiquen.
+\item[Índice de tablas:] en caso de existir en el texto, ídem que el anterior.
+\item[Índice de abreviaturas, siglas, símbolos, etc.:] en caso de ser necesarios se podrá incluir cada uno de ellos.
+\end{description}
+\item[Cuerpo del documento:] en el contenido del documento se da flexibilidad para su organización y se puede estructurar en las secciones que se considere. En todo caso obligatoriamente se deberá, al menos, incluir los siguientes contenidos:
+\begin{description}
+\item[Introducción:] donde se hará énfasis a la importancia de la temática, su vigencia y actualidad; se planteará el problema a investigar, así como el propósito o finalidad de la investigación.
+\item[Marco teórico o Estado del arte:] se hará mención a los elementos conceptuales que sirven de base para la investigación, estudios previos relacionados con el problema planteado, etc.
+\item[Objetivos:] se establecerá el objetivo general y los específicos.
+\item[Metodología:] se indicará el tipo o tipos de investigación, las técnicas y los procedimientos que serán utilizados para llevarla a cabo; se identificará la población y el tamaño de la muestra así como las técnicas e instrumentos de recolección de datos.
+\item[Resultados:] incluirá los resultados de la investigación o trabajo, así como el análisis y la discusión de los mismos.
+\end{description}
+\item[Conclusiones:] obligatoriamente se incluirá una sección de conclusiones donde se realizará un resumen de los objetivos conseguidos así como de los resultados obtenidos si proceden.
+\item[Bibliografía y referencias:] se incluirá también la relación de obras y materiales consultados y empleados en la elaboración de la memoria del TFG/TFM. La bibliografía y las referencias serán indexadas en orden alfabético (sistema nombre y fecha) o se numerará correlativamente según aparezca (sistema numérico). Se empleará la familia 1 como tipo de letra. Podrá utilizarse cualquier sistema bibliográfico normalizado predominante en la rama de conocimiento, estableciéndose como prioritarios el sistema ISO 690, sistema APA (American Psychological Association) o Harvard (no necesariamente en ese orden de preferencia). En esta plantilla Latex se propone usar el estilo APA indicándolo en la línea correspondiente como 
+\begin{verbatim}
+\bibliographystyle{apalike}
+\end{verbatim}
+\item[Anexos:] se podrá incluir los anexos que se consideren oportunos.
+
+\end{description}
+
+
+ómo escribir con  \LaTeX.\footnote{En http://metodos.fam.cie.uva.es/~latex/apuntes/apuntes.html hay unos buenos apuntes al respecto.}
+
+Aquí va una lista:
+\begin{itemize}
+    \item Ingeniería Informática.
+    \item Ingeniería Sonido e Imagen en Telecomunicación.
+    \item Ingeniería Multimedia.
+    \begin{itemize}
+         \item Mención: Creación y ocio digital.
+         \item Mención: Gestión de Contenidos.
+    \end{itemize}
+\end{itemize}
+
+Ahora veremos otra estructura más: las tablas.
+
+\section{Inserción de tablas}
+
+Aquí va una tabla\footnote{En http://www.tablesgenerator.com/ se puede encontrar un generador On-Line de tablas para \LaTeX} para que se vea cómo insertar una tabla simple dentro del documento.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{lllll}
+&columna A&columna B&columna C\\
+\hline
+fila 1&fila 1, columna A & fila 1, columna B & fila 1, columna C\\
+fila 2&fila 2, columna A & fila 2, columna B & fila 2, columna C\\
+fila 3&fila 3, columna A & fila 3, columna B & fila 3, columna C\\ \hline
+\end{tabular}
+\end{center}
+\caption{Ejemplo de tabla.}
+\label{tabladeejemplo}
+\end{table}
+
+\LaTeX usa un sistema de parámetros para ``decorar'' las tablas. Puedes consultar estos parámetros en la tabla \ref{tabla_parametros} de la página \pageref{tabla_parametros}. La tabla se ubicará donde, a juicio de \LaTeX, menos moleste por lo que puede no aparecer necesariamente donde se ha insertado en el texto original. 
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|p{0.8\textwidth}|}
+\hline
+Parámetro & \multicolumn{1}{c|}{Significado} \\ \hline
+\texttt{h} & Situa el elemento flotante \emph{preferentemente}
+(es decir, si es posible) en la situación exacta donde se incluye este \\
+\texttt{t} & Situa el elemento en la parte de arriba de la página \\
+\texttt{b} & Situa el elemento en la parte de abajo de la página \\
+\texttt{p} & Situa el elemento en una página aparte dedicada sólo a
+elementos flotantes; en el caso del formato \texttt{article},
+ésta se situa al final del documento, mientras que para al book es
+colocada al final de cada capítulo \\ \hline
+\end{tabular}
+\end{center}
+\caption{Parámetros optativos de los entornos flotantes}
+\label{tabla_parametros}
+\end{table}
+
+
+
+\section{Inserción de figuras}
+
+Las figuras son un caso un poco especial ya que \LaTeX busca el mejor lugar para ponerlas, no siendo necesariamente el ligar donde está la referencia. Por ello es importante añadirle un ``caption'' y un ``label'' para poder hacer referencia a ellas en el párrafo correspondiente. Nosotros ponemos la referencia a la figura \ref{logo_im} que está en la página \pageref{logo_im}. justo aquí debajo, pero \LaTeX puede que la ubique en otro lugar.
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.25]{imagenes/logoim.jpg}
+\caption{Logo de Ingeniería  Multimedia.}
+\label{logo_im}
+\end{center}
+\end{figure}
+
+
+\section{Inserción de código}
+A veces tendrás que insertar algún pedazo de código fuente para explicar algo relacionado con él. No sustituyas explicaciones con enormes listados de código. Si pones algo de código en tu TFG que sea para demostrar algo o explicar alguna solución.
+
+El resultado será:
+\begin{lstlisting}[style=C, caption={ejemplo código C},label=C_code]
+#include <stdio.h>
+int main(int argc, char* argv[]) {
+  puts("Hola mundo!");
+}
+\end{lstlisting}
+
+

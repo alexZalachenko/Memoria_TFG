@@ -1,67 +1,64 @@
 This is BibTeX, Version 0.99d (TeX Live 2016/W32TeX)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: tfg_im.aux
-The style file: biblatex.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=20001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: tfg_im-blx.bib
-Database file #2: bibliografia/bibliografia.bib
-Warning--entry type for "listing_packagge" isn't style-file defined
---line 32 of file bibliografia/bibliografia.bib
-Biblatex version: 3.3
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 6 entries,
-            6256 wiz_defined-function locations,
-            1210 strings with 9490 characters,
-and the built_in function-call counts, 19836 in all, are:
-= -- 964
-> -- 533
-< -- 156
-+ -- 358
-- -- 180
-* -- 1298
-:= -- 1785
-add.period$ -- 0
-call.type$ -- 6
-change.case$ -- 45
-chr.to.int$ -- 54
-cite$ -- 10
-duplicate$ -- 2276
-empty$ -- 2033
-format.name$ -- 254
-if$ -- 4202
-int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 0
-newline$ -- 147
-num.names$ -- 205
-pop$ -- 1710
+The style file: apalike.bst
+Database file #1: bibliografia/bibliografia.bib
+Warning--entry type for "albertoiglesiasfraga2016" isn't style-file defined
+--line 9 of file bibliografia/bibliografia.bib
+Warning--entry type for "startupxplore2017" isn't style-file defined
+--line 17 of file bibliografia/bibliografia.bib
+Warning--entry type for "albertini2015" isn't style-file defined
+--line 35 of file bibliografia/bibliografia.bib
+Warning--entry type for "faceentrepreneurship2016" isn't style-file defined
+--line 43 of file bibliografia/bibliografia.bib
+Warning--entry type for "andreapelaez" isn't style-file defined
+--line 51 of file bibliografia/bibliografia.bib
+Warning--entry type for "antevenio2016" isn't style-file defined
+--line 59 of file bibliografia/bibliografia.bib
+Warning--entry type for "emooc" isn't style-file defined
+--line 67 of file bibliografia/bibliografia.bib
+Warning--entry type for "mariagonzalez2015" isn't style-file defined
+--line 73 of file bibliografia/bibliografia.bib
+Warning--empty year in emooc
+You've used 12 entries,
+            1935 wiz_defined-function locations,
+            518 strings with 4700 characters,
+and the built_in function-call counts, 3016 in all, are:
+= -- 302
+> -- 90
+< -- 12
++ -- 28
+- -- 26
+* -- 194
+:= -- 592
+add.period$ -- 27
+call.type$ -- 12
+change.case$ -- 72
+chr.to.int$ -- 12
+cite$ -- 13
+duplicate$ -- 128
+empty$ -- 199
+format.name$ -- 40
+if$ -- 557
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 3
+newline$ -- 54
+num.names$ -- 36
+pop$ -- 53
 preamble$ -- 1
-purify$ -- 58
+purify$ -- 73
 quote$ -- 0
-skip$ -- 858
+skip$ -- 110
 stack$ -- 0
-substring$ -- 1244
-swap$ -- 675
-text.length$ -- 164
-text.prefix$ -- 5
-top$ -- 1
-type$ -- 191
-warning$ -- 0
-while$ -- 271
+substring$ -- 155
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 70
+warning$ -- 1
+while$ -- 25
 width$ -- 0
-write$ -- 142
-(There was 1 warning)
+write$ -- 128
+(There were 9 warnings)
