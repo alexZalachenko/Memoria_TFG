@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.11.8)  10 JAN 2017 12:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.11.8)  10 JAN 2017 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -990,6 +990,10 @@ Package babel Info: Redefining spanish shorthand "?
 
 
 ]
+
+LaTeX Warning: Citation `UNE50136:97' on page \es@scroman {v} undefined on inpu
+t line 5.
+
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 8.
 Package babel Info: Redefining spanish shorthand >>
@@ -1014,7 +1018,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 8.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 8.
- [5]
+[5]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 8.
 Package babel Info: Redefining spanish shorthand >>
@@ -1205,8 +1209,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 181.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 181.
-
-[11
+ [11
 
 
 ]
@@ -1296,7 +1299,8 @@ Package babel Info: Redefining spanish shorthand "?
  [14
 
 
-] (./tfg_im.lot
+]
+(./tfg_im.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
@@ -1551,44 +1555,50 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 35.
 
-Overfull \hbox (9.92033pt too wide) in paragraph at lines 39--41
+Overfull \hbox (9.92033pt too wide) in paragraph at lines 39--40
 \OT1/cmr/m/n/10.95 http://innokabi.com/wp-content/uploads/2013/09/lienzo-lean-c
 anvas-de-ash-maurya.jpg)
  []
 
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 47.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 47.
-[3] <imagenes/leanCanvas.jpg, id=233, 602.25pt x 394.47375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+<imagenes/leanCanvas.jpg, id=232, 602.25pt x 394.47375pt>
 File: imagenes/leanCanvas.jpg Graphic file (type jpg)
 
 <use imagenes/leanCanvas.jpg>
-Package pdftex.def Info: imagenes/leanCanvas.jpg used on input line 53.
+Package pdftex.def Info: imagenes/leanCanvas.jpg used on input line 43.
 (pdftex.def)             Requested size: 361.35278pt x 236.68607pt.
-) (./capitulos/marcoteorico.tex
+LaTeX Info: Redefining \. on input line 51.
+LaTeX Info: Redefining \% on input line 51.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 51.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 51.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 51.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 51.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 51.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 51.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 51.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 51.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 51.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 51.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 51.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 51.
+ [3 <./imagenes/leanCanvas.jpg>])
+(./capitulos/marcoteorico.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 Package babel Info: Redefining spanish shorthand <<
@@ -1615,7 +1625,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [4 <./imagenes/leanCanvas.jpg>]
+ [4]
 chapter 2.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1.
@@ -1685,19 +1695,131 @@ Package babel Info: Redefining spanish shorthand "?
 [5
 
 
-]
+] <imagenes/catan.jpg, id=256, 1204.5pt x 1062.97125pt>
+File: imagenes/catan.jpg Graphic file (type jpg)
+
+<use imagenes/catan.jpg>
+Package pdftex.def Info: imagenes/catan.jpg used on input line 34.
+(pdftex.def)             Requested size: 361.35278pt x 318.89384pt.
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 43.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 40.
+(babel)             in language  on input line 43.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 43.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 43.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 43.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 43.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 43.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 43.
+ [6 <./imagenes/catan.jpg>]
+<imagenes/pandemia.jpg, id=265, 1606.0pt x 1116.17pt>
+File: imagenes/pandemia.jpg Graphic file (type jpg)
+
+<use imagenes/pandemia.jpg>
+Package pdftex.def Info: imagenes/pandemia.jpg used on input line 46.
+(pdftex.def)             Requested size: 401.49902pt x 279.04181pt.
+
+<imagenes/fleaMarket.jpg, id=268, 912.208pt x 684.156pt>
+File: imagenes/fleaMarket.jpg Graphic file (type jpg)
+
+<use imagenes/fleaMarket.jpg>
+Package pdftex.def Info: imagenes/fleaMarket.jpg used on input line 57.
+(pdftex.def)             Requested size: 364.87674pt x 273.65755pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 66.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 66.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 66.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 66.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 66.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 66.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 72.
+ [7 <./imagenes/pandemia.jpg>]
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 72.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 72.
+ [8 <./imagenes/fleaMarket.jpg>] <imagenes/hipster01.jpg, id=280, 642.4pt x 481
+.8pt>
+File: imagenes/hipster01.jpg Graphic file (type jpg)
+
+<use imagenes/hipster01.jpg>
+Package pdftex.def Info: imagenes/hipster01.jpg used on input line 79.
+(pdftex.def)             Requested size: 385.44298pt x 289.08221pt.
+
+<imagenes/ustartup01.jpg, id=283, 602.25pt x 336.25626pt>
+File: imagenes/ustartup01.jpg Graphic file (type jpg)
+
+<use imagenes/ustartup01.jpg>
+Package pdftex.def Info: imagenes/ustartup01.jpg used on input line 90.
+(pdftex.def)             Requested size: 361.35278pt x 201.75531pt.
 ) (./capitulos/objetivos.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1725,7 +1847,34 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [6]
+ [9]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1.
+ [10 <./imagenes/hipster01.jpg> <./imagenes/ustartup01.jpg>]
 chapter 3.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1.
@@ -1763,7 +1912,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 28.
-[7
+[11
 
 
 ]
@@ -1815,7 +1964,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 92.
-[8]
+[12]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand >>
@@ -1870,7 +2019,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 111.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 111.
- [9]
+ [13]
 (c:/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -1914,7 +2063,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [10])
+ [14])
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 198.
 Package babel Info: Redefining spanish shorthand >>
@@ -1953,7 +2102,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [11
+ [15
 
 
 ]
@@ -1981,7 +2130,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [12
+ [16
 
 
 ]
@@ -2024,7 +2173,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 207.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 207.
- [13]
+ [17]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
  (./tfg_im.aux
 LaTeX Info: Redefining \. on input line 24.
@@ -2034,13 +2183,20 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `tfg_im.out' has not changed.
 (rerunfilecheck)             Checksum: F328254BECF6E0406C57A9AA4CE21A83;873.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
  ) 
 Here is how much of TeX's memory you used:
- 11752 strings out of 493013
- 177757 string characters out of 6136993
- 391528 words of memory out of 5000000
- 15034 multiletter control sequences out of 15000+600000
+ 11790 strings out of 493013
+ 178478 string characters out of 6136993
+ 392120 words of memory out of 5000000
+ 15059 multiletter control sequences out of 15000+600000
  11984 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,18n,66p,8846b,1449s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2059,10 +2215,10 @@ type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmti7.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t8.pfb>
-Output written on tfg_im.pdf (31 pages, 636145 bytes).
+Output written on tfg_im.pdf (35 pages, 2928436 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 310 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
- 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 416 PDF objects out of 1000 (max. 8388607)
+ 338 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
