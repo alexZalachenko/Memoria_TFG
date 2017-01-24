@@ -17,6 +17,7 @@
 %\usepackage[chapter]{algorithm}
 %\RequirePackage{verbatim}
 %\RequirePackage[Glenn]{fncychap}
+\usepackage{lscape}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage{afterpage}
@@ -25,7 +26,17 @@
 \definecolor{portada}{RGB}{239,206,53}
 \definecolor{base}{RGB}{35,31,32}
 \usepackage{pdfpages}
+\usepackage{csquotes}
+\usepackage[font=scriptsize]{caption}
+\usepackage[figuresright]{rotating}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{breakcites}
+\usepackage[hyphenbreaks]{breakurl}
 
+\newenvironment{itquote}
+{\begin{quote}\itshape}
+{\end{quote}}
 
 %Instrucciones para poder escribir código y mostrarlo de manera elegante:
 \definecolor{gray97}{gray}{.97}
@@ -96,7 +107,7 @@ literate={á}{{\'a}}1 {Á}{{\'A}}1 {é}{{\'e}}1 {É}{{\'e}}1 {í}{{\'i}}1  {Í}{
 \newcommand{\myOtherProf}{Nombre Apellido1 Apellido2)}
 \newcommand{\myFaculty}{Escuela Politécnica Superior de la Universidad de Alicante}
 \newcommand{\myFacultyShort}{EPS UA}
-\newcommand{\depTutorOne}{Departamento del tutor}
+\newcommand{\depTutorOne}{Lenguajes y Sistemas Informáticos}
 \newcommand{\depTutorTwo}{Departamento del cotutor}
 
 
@@ -193,7 +204,7 @@ pdfproducer = {pdflatex}
 %input{capitulos/resultados}
 %input{capitulos/conclusiones}
 
-\nocite{*} %incluye TODOS los documentos de la base de datos bibliográfica sean o no citados en el texto
+%\nocite{*} %incluye TODOS los documentos de la base de datos bibliográfica sean o no citados en el texto
 \bibliography{bibliografia/bibliografia}
 \addcontentsline{toc}{chapter}{Bibliografía} %sustituir bibliografía con el nombre del fichero bibtex con la bibliografía
 \bibliographystyle{apalike}
