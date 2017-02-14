@@ -2,21 +2,143 @@
 
 \section{Descripción general}
 
-Para describir el desarrollo se ha decidido seguir el estándar IEEE 830 para la especificación de requisitos.
+Para describir el desarrollo se ha decidido seguir el estándar IEEE 830 para la especificación de requisitos \footnote{www.fdi.ucm.es/profesor/Gmendez/docs/is0809/ieee830.pdf}.
 
 \section{Perspectiva del producto}
 
-Con el fin de cumplir los objetivos propuestos
+El sistema a construir consistirá en una aplicación móvil para dispositivos Android \footnote{www.android.com} desarrollada con el motor de videojuegos Unity3D \footnote{https://unity3d.com/es/}. 
+
+La aplicación no formará parte de un sistema mayor, será un videojuego totalmente independiente. Aun así se hará uso de servicios de terceros tales como librerías de software, frameworks y APIs entre otros.
 
 \section{Funcionalidad del producto}
 
+Resumen de las funcionalidades principales que el producto debe realizar, sin entrar en información de detalle.
+El videojuego deberá permitir el movimiento del jugador en el plano 2D, además podrá interactuar con los NPCs y dialogar con ellos. Se podrán completar objetivos y logros para de este modo avanzar en la historia.
+
+El juego además enseñará conceptos clave sobre \textquote{Lean Startup} y sobre el emprendimiento en general.
+
 \section{Características de los usuarios}
+
+El perfil de un consumidor de formación sobre emprendimiento es muy amplio: desde jóvenes recién graduados llenos de optimismo hasta personas de mediana edad que desean reinventarse y dejar de ser asalariados. 
+
+Es por ello que es difícil concretar un perfil ya que son diferentes personas de diferentes edades y perfiles socioculturales las que desean aventurarse en el emprendimiento.
+
+En cualquier caso sí se pueden encontrar aspectos comunes en esta gran variaded de usuarios:
+
+\begin{itemize}
+
+\item conocimiento tecnológico y como desenvolverse
+\item blabbaba
+\item bublubbluububl
+
+\end{itemize}
 
 \section{Restricciones}
 
-\section{Requisitos específicos}
+Existen varias limitaciones a tener en cuenta a la hora de diseñar y desarrollar el sistema:
 
-\subsection{Requisitos comunes de las interfaces}
+\begin{itemize}
+
+\item para la realización del proyecto se dispondrá de un presupuesto nulo. Es por ello que las herramientas, frameworks y demás productos que se utilicen deberán ser gratuitas.
+\item el motor de videojuegos a utilizar deberá ser Unity 3D ya que se tiene conocimiento del mismo y no se dispone de tiempo para aprender a utilizar otro motor de videojuegos.
+\item el lenguaje de programación a utilizar será c\# ya que de entre los disponibles para Unity 3D es el más adecuado por potencia, documentación y dominio por parte del desarrollador.
+\item el sistema operativo objetivo será Android ya junto con los sistemas operativos para ordenador no requiere ninguna licencia para publicar aplicaciones. La plataforma serán los dispositivos móviles ya que es muy sencillo llegar al público de esta plataforma, aunque no tanto hacerse hueco entre dicha audiencia.
+
+\end{itemize}
+
+\section{Requisitos específicos}
 
 \subsection{Interfaces de usuario}
 
+Respecto a las interfaces de usuario se pueden observar dos estilos claramente diferenciados: las interfaces del menú principal y las de la pantalla de juego. En cuanto a las primeras deberán seguir un estilo minimalista y utilizar controles simples; respecto de las segundas, la simplicidad es obligatoria.
+
+Es un requisito imprescindible que la interfaz mostrada durante el juego no sea intrusiva y entorpezca la experiencia de usuario. Esto se conseguirá disponiendo pequeños botones en la pantalla situados de forma estratégica para que la visión del jugador se centre principalmente en el mundo del juego y los personajes.
+
+Un requisito común de las interfaces de usuario es que debido a que serán mostradas en un dispositivo móvil tendrán que adecuarse a una pantalla pequeña y recibir la interacción del usuario mediante toques en la pantalla del dispositivo.
+
+\subsection{Requisitos funcionales}
+
+Para describir las funcionalidades del sistema se utilizará una aproximación basada en mecánicas. Cada posible acción del usuario sobre el sistema se considerará una mecánica y se definirá como un requisito. 
+
+Dichas mecánicas son activadas al detectarse cierto estímulo. Por ejemplo al producir el estímulo de tocar en algun lugar del mundo, se desencadena la mecánica de movimiento.
+
+Al identificador de cada funcionalidad le acompañarán unas siglas (USR, UI, SYS) dependiendo de si dicha funcionalidad se refiere a mecánicas del usuario, la interfaz de usuario o al sistema.
+
+\subsection{Requisitos de usuario}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Identificador & Nombre                        & Requerimiento                                                                           & Descripción                                                                                                                                                                                                                                                           & Prioridad      \\ \hline
+RF-USR-01     & Mover personaje               & El usuario podrá elegir donde mover al personaje controlado                             & Al tocar con el dedo en cualquier punto de la pantalla el personaje controlado se moverá a esa posición (solo en el eje x)                                                                                                                                            &                \\ \hline
+RF-USR-02     & Interactuar con NPCs          & El usuario podrá seleccionar un NPC con el que interactuar                              & Al tocar con el dedo sobre un NPC, si se está lo suficientemente cerca se abrirá el menú conversacional                                                                                                                                                               &                \\ \hline
+RF-USR-03     & Cambiar de escenario          & Se podrá navegar entre escenarios                                                       & Al clicar en una de las puertas de cada escenario se avanzará al escenario asociado a dicha puerta                                                                                                                                                                    &                \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Requisitos de interfaz}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{lllll}
+\hline
+\multicolumn{1}{|l|}{\textbf{Identificador}} & \multicolumn{1}{l|}{\textbf{Nombre}}               & \multicolumn{1}{l|}{\textbf{Requerimiento}}                                                            & \multicolumn{1}{l|}{\textbf{Descripción}}                                                                                                                                                                                                                             & \multicolumn{1}{l|}{\textbf{Prioridad}} \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-01}}      & \multicolumn{1}{l|}{Navegar menú principal}        & \multicolumn{1}{l|}{Se podrá cambiar entre  las diferentes pantallas del menú principal}                & \multicolumn{1}{l|}{Arrastrando con el dedo en la pantalla hacia la derecha/izquierda se cambiará a la correspondiente pantalla}                                                                                                                                      & \multicolumn{1}{l|}{Alta}               \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-02}}      & \multicolumn{1}{l|}{Comenzar juego}                & \multicolumn{1}{l|}{Se empezará el juego al seleccionar el botón correspondiente en el menú principal} & \multicolumn{1}{l|}{En el el menú principal en la vista inicial se podrá comenzar el juego al presionar el botón "play"}                                                                                                                                              & \multicolumn{1}{l|}{Alta}               \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-03}}      & \multicolumn{1}{l|}{Desactivar/Activar música}     & \multicolumn{1}{l|}{Se podrá desactivar la música ambiente del juego}                                  & \multicolumn{1}{l|}{Clicando en el icono de Música en el menú de opciones se activará/desactivará la música}                                                                                                                                                          & \multicolumn{1}{l|}{Baja}               \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-04}}      & \multicolumn{1}{l|}{Desactivar/Activar sonidos}    & \multicolumn{1}{l|}{Se podrán desactivar los efectos de sonido del juego}                              & \multicolumn{1}{l|}{Clicando en el icono de Sonidos en el menú de opciones se activarán/desactivarán los efectos de sonido}                                                                                                                                           & \multicolumn{1}{l|}{Baja}               \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-05}}      & \multicolumn{1}{l|}{Eliminar logros}               & \multicolumn{1}{l|}{Se podrán eliminar los logros conseguidos}                                         & \multicolumn{1}{l|}{Clicando en el icono de Eliminar logros del menú de opciones se eliminarán todos los logros obtenidos}                                                                                                                                            & \multicolumn{1}{l|}{Baja}               \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-06}}      & \multicolumn{1}{l|}{Quitar anuncios}               & \multicolumn{1}{l|}{?}                                                                                 & \multicolumn{1}{l|}{?}                                                                                                                                                                                                                                                & \multicolumn{1}{l|}{Baja}               \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-07}}      & \multicolumn{1}{l|}{Ver otros juegos}              & \multicolumn{1}{l|}{Se podrá acceder a la descarga de otros juegos del autor}                          & \multicolumn{1}{l|}{Clicando en los iconos de juegos del apartado "Mas juegos" se accederá a Google Play donde se podrá descargar dicho juego}                                                                                                                        & \multicolumn{1}{l|}{Baja}               \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-08}}      & \multicolumn{1}{l|}{Navegar entre logros}          & \multicolumn{1}{l|}{Se podrá navegar entre los logros disponibles}                                     & \multicolumn{1}{l|}{En el menú de logros se podrá cambiar entre el logro seleccionado tocando los botones con forma de flecha situados a los lados de la pantalla}                                                                                                    & \multicolumn{1}{l|}{Media}              \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-09}}      & \multicolumn{1}{l|}{Ver logros desbloquados}       & \multicolumn{1}{l|}{Se podrá ver la cantidad de logros desbloqueados hasta el momento}                 & \multicolumn{1}{l|}{En el menú de logros aparecerá un texto representando el número de logros desbloqueados hasta el momento y el total a conseguir}                                                                                                                  & \multicolumn{1}{l|}{Media}              \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-10}}      & \multicolumn{1}{l|}{Ver descripción de logro}      & \multicolumn{1}{l|}{Se podrá ver una descripción de los logros}                                        & \multicolumn{1}{l|}{En el menú de logros se podrá ver un texto descriptivo del logro seleccionado}                                                                                                                                                                    & \multicolumn{1}{l|}{Media}              \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-11}}      & \multicolumn{1}{l|}{-}                             & \multicolumn{1}{l|}{Se podrá seleccionar el logro del que se desea ver información}                    & \multicolumn{1}{l|}{-}                                                                                                                                                                                                                                                & \multicolumn{1}{l|}{}                   \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-12}}      & \multicolumn{1}{l|}{Abrir selector de personaje}   & \multicolumn{1}{l|}{Se podrá abrir un menú donde seleccionar el personaje a controlar}                 & \multicolumn{1}{l|}{Clicando en el icono del selector de personaje se abrirá una ventana con los iconos de cada personaje. El icono del personaje actualmente controlado se mostrará en gris y no será seleccionable}                                                 & \multicolumn{1}{l|}{}                   \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-13}}      & \multicolumn{1}{l|}{Seleccionar personaje}         & \multicolumn{1}{l|}{Al clicar en un icono de personaje se cambiará el personaje seleccionado}          & \multicolumn{1}{l|}{Al clicar en uno de los iconos de personaje se cambia el personaje controlado. En el icono del selector de personaje aparecerá el icono del nuevo personaje seleccionado}                                                                         & \multicolumn{1}{l|}{}                   \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-14}}      & \multicolumn{1}{l|}{Cerrar selector de personaje}  & \multicolumn{1}{l|}{Se podrá cerrar el menú donde seleccionar el personaje a controlar}                & \multicolumn{1}{l|}{Clicando en el selector de personaje, si este está abierto se cerrará}                                                                                                                                                                            & \multicolumn{1}{l|}{}                   \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-15}}      & \multicolumn{1}{l|}{Notificar objetivo completado} & \multicolumn{1}{l|}{Cuando se cumpla el objetivo actual se mostrará una notificación}                  & \multicolumn{1}{l|}{Al completar un objetivo el icono del indicador de objetivos girará. El texto del nuevo objetivo se ańadirá a la lista de objetivos. El objetivo completado se mostrará tachado}                                                                  & \multicolumn{1}{l|}{}                   \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-16}}      & \multicolumn{1}{l|}{Abrir indicador de objetivos}  & \multicolumn{1}{l|}{Se podrá abrir la lista de objetivos}                                              & \multicolumn{1}{l|}{Al clicar en el icono del indicador de objetivos se desplegará una lista con los objetivos completados tachados y el objetivo actual sin tachar}                                                                                                  & \multicolumn{1}{l|}{}                   \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-17}}      & \multicolumn{1}{l|}{Cerrar indicador de objetivos} & \multicolumn{1}{l|}{Se podrá cerrar la lista de objetivos}                                             & \multicolumn{1}{l|}{Al clicar en el icono del indicador de objetivos se cerrará la lista si esta estaba abierta}                                                                                                                                                      & \multicolumn{1}{l|}{}                   \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-18}}      & \multicolumn{1}{l|}{Abrir menú conversacional}     & \multicolumn{1}{l|}{Se abrirá el menú conversacional al interactuar con un personaje}                  & \multicolumn{1}{l|}{Al abrir el menú conversacional se hará zoom sobre los personajes involucrados. Se mostrará un texto en la pantalla correspondiente a lo que dice el NPC y botones con las posibles respuestas}                                                   & \multicolumn{1}{l|}{}                   \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-19}}      & \multicolumn{1}{l|}{Contestar NPC}                 & \multicolumn{1}{l|}{Se podrá contestar a los NPC usando el menú conversacional}                        & \multicolumn{1}{l|}{Clicando en uno de los botones se contestará al NPC y se actualizará la conversación}                                                                                                                                                             & \multicolumn{1}{l|}{}                   \\ \hline
+\multicolumn{1}{|l|}{\textbf{RF-UI-20}}      & \multicolumn{1}{l|}{Terminar conversación}         & \multicolumn{1}{l|}{Al alcanzar cierto punto de la conversación se cerrará el menu conversacional}     & \multicolumn{1}{l|}{Cuando la última decisión tomada tiene asociada tiene la marca correspondiente de fin de conversación el menú conversacional se cerrará. El punto en el que se encuentra la conversación se guarda para retomarla desde ese punto posteriormente} & \multicolumn{1}{l|}{}                   \\ \hline
+                             
+\end{tabular}
+\end{table}
+
+\subsection{Requisitos de sistema}
+
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Identificador & Nombre                        & Requerimiento                                                                           & Descripción                                                                                                                                                                                                                                                           & Prioridad      \\ \hline
+RF-SYS-01     & Iniciar menú principal        & Al iniciar el juego el menú principal comienza en la vista correspondiente              & Al iniciar el juego el menú principal mostrará la vista con el título principal y el botón para iniciar el juego                                                                                                                                                      &                \\ \hline
+RF-SYS-02     & Seleccionar personaje         & Al clicar en un icono del selector de personaje se cambiará el personaje controlado     & Cuando se clique en un icono del selector de personaje se moverá la cámara hasta enfocar al nuevo personaje seleccionado. Cuando se clique en la pantalla se moverá el nuevo personaje controlado                                                                     &                \\ \hline
+RF-SYS-03     & Cargar conversación           & Se cargarán las conversaciones desde archivos de texto                                  & Al abrir el menú conversacional se cargará el fichero de texto correspondiente a la conversación del personaje. Si ya se ha conversado con ese personaje se cargará la conversación desde el punto guardado                                                           &                \\ \hline
+RF-SYS-04     & Contestar NPC                 & Al contestar a un NPC se actualizarán las respuestas y el texto del NPC                 & Al contestar a un NPC se leerá del JSON el nuevo texto y las nuevas respuestas y se actualizará la interfaz para mostrar estos datos                                                                                                                                  &                \\ \hline
+RF-SYS-05     & Codificar conversaciones      & Las conversaciones estarán codificadas en formato JSON y guardadas en ficheros de texto & Cada NPC tendrá un fichero de texto asociado con la conversación que ofrece en formato JSON. Los elementos del JSON serán nodos con texto y nodos hijos con las respuestas asociadas a ese texto. Las respuestas podrán tener "markups" asociadas que indican eventos &                \\ \hline
+RF-SYS-06     & Completar objetivo            & Se completarán objetivos al tomar decisiones con la markup correspondiente              & Cuando se elige una opción de conversación con la "markup" de objetivo asociada, se completará dicho objetivo                                                                                                                                                         &                \\ \hline
+RF-SYS-07     & Cambiar de escenario          & Cuando el jugador cambia de escenario se modifica la escena                             & Cuando se produzca un cambio de escenario se desactivará de la escena el escenario abandonado y el jugador aparecerá en el punto de "spawn" asociado al nuevo escenario                                                                                               &                \\ \hline
+\end{tabular}
+\end{table}
+
+
+\section{Requisitos no funcionales}
+
+
+\begin{itemize}
+
+\item Rendimiento
+\item 
+
+\end{itemize}
