@@ -39,35 +39,28 @@
 {\end{quote}}
 
 %Instrucciones para poder escribir código y mostrarlo de manera elegante:
-\definecolor{gray97}{gray}{.97}
-\definecolor{gray75}{gray}{.75}
-\definecolor{gray45}{gray}{.45}
-\definecolor{gray30}{gray}{.94}
-
 \usepackage{listings}
-\lstset{ frame=Ltb,
-framerule=0pt,
-aboveskip=0.5cm,
-framextopmargin=3pt,
-framexbottommargin=3pt,
-framexleftmargin=0.4cm,
-framesep=0pt,
-rulesep=.4pt,
-backgroundcolor=\color{gray97},
-rulesepcolor=\color{black},
-%
-stringstyle=\ttfamily,
-showstringspaces = false,
-basicstyle=\small\ttfamily,
-commentstyle=\color{gray45},
-keywordstyle=\bfseries,
-%
-numbers=left,
-numbersep=15pt,
-numberstyle=\tiny,
-numberfirstline = false,
-breaklines=true,
-literate={á}{{\'a}}1 {Á}{{\'A}}1 {é}{{\'e}}1 {É}{{\'e}}1 {í}{{\'i}}1  {Í}{{\'I}}1  {ó}{{\'o}}1  {Ó}{{\'O}}1  {ú}{{\'u}}1  {Ú}{{\'U}}1  {Ñ}{{\~N}}1 {ñ}{{\~n}}1 ,
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=C,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
 }
 
 
@@ -76,25 +69,7 @@ literate={á}{{\'a}}1 {Á}{{\'A}}1 {é}{{\'e}}1 {É}{{\'e}}1 {í}{{\'i}}1  {Í}{
 \lstnewenvironment{listing}[1][]
    {\lstset{#1}\pagebreak[0]}{\pagebreak[0]}
 
-\lstdefinestyle{Consola}
-   {basicstyle=\scriptsize\bf\ttfamily,
-    backgroundcolor=\color{gray30},
-    frame=single,
-    numbers=none
-   }
-\lstdefinestyle{C}
-	{basicstyle=\scriptsize,
-	frame=single,
-	language=C,
-	numbers=left
-	}
-\lstdefinestyle{CodigoC++}
-        {basicstyle=\small,
-	frame=single,
-	backgroundcolor=\color{gray30},
-	language=C++,
-	numbers=left
- 	}
+
 
 % ********************************************************************
 % Información sobre el TFG. Comentar lo que NO se desee añadir y sustituir con la información correcta.
@@ -201,7 +176,7 @@ pdfproducer = {pdflatex}
 \input{capitulos/objetivos}
 \input{capitulos/metodologia}
 \input{capitulos/desarrollo}
-%input{capitulos/resultados}
+\input{capitulos/resultados}
 %input{capitulos/conclusiones}
 
 %\nocite{*} %incluye TODOS los documentos de la base de datos bibliográfica sean o no citados en el texto
