@@ -622,3 +622,99 @@ A continuación se describirá la arquitectura utilizada para desarrollar los co
 \subsubsection{Sistema de conversaciones}
 
 El sistema de conversaciones es el más importante del juego ya que los diálogos con los personajes del juego son el hilo conductor de este.
+
+Los diálogos en lugar de estar insertados directamente en el código se almacenan en ficheros de texto plano independientes. Esto permite que se puedan modificar los diálogos sin tener que recompilar el código del juego. Además permite que cualquier persona sin conocimientos de programación escriba diálogos.
+
+Cada diálogo es un archivo que sigue el formato JSON \footnote{https://geekytheory.com/json-i-que-es-y-para-que-sirve-json}. Las conversaciones tienen una estructura arbórea donde los nodos representan la parte del diálogo correspondiente al NPC y las ramas salientes de dicho nodo representan las posibles contestaciones. La representación de una conversación en el formato JSON sigue la estructura que se puede ver en la siguiente imagen (ver fig. \ref{jsonFormat}).
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.57]{imagenes/jsonFormat.png}
+\caption{Representación del formato utilizado para los ficheros de diálogo}
+\label{jsonFormat}
+\end{center}
+\end{figure}
+
+Como se puede observar, los datos contenidos en el JSON son un array de objetos Nodo y un string que indica el nodo inicial de la conversación. 
+
+Los objetos Nodos están indentificados por una cadena de texto que se compone de las tres primeras palabras del diálogo.Cada Nodo contiene el texto del NPC y las posibles contestaciones que el jugador le puede dar.
+
+Las contestaciones se componen de el identificador del nodo al que conduce dicha contestación y el texto de la contestación en sí. Además puede contener ,o no, diferentes \textquote{flags} que le dan a la elección una funcionalidad extra. Entre las \textquote{flags} disponibles se encuentran la de acabar la conversación, desbloquear un objetivo o desbloquear un logro.
+
+Para la creación de los ficheros de diálogos se puede escribir el JSON manualmente rellenando con los datos deseados o se puede utilizar la herramienta inklewritter \footnote{http://www.inklestudios.com/inklewriter/}. Dicha herramienta presenta una forma más sencilla de escribir conversaciones de múltiple respuesta (ver fig. \ref{inklewritter}). Además cuenta con la posibilidad de exportar el trabajo final a un fichero de texto en formato JSON. El parser JSON del videojuego está construido específicamente para poder procesar los diálogos construidos con inklewritter.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.7]{imagenes/inklewritter.png}
+\caption{Herramienta inklewritter}
+\label{inklewritter}
+\end{center}
+\end{figure}
+
+Para explicar la arquitectura del sistema de conversaciones se emplearán sendos diagramas de secuencia: uno para explicar el proceso de iniciar una conversación y otro para explicar el proceso de selección de contestaciones.
+
+En el siguiente diagrama (ver fig. \ref{nuevaConversFlujo}) se ve el flujo de código necesario para iniciar una conversación. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.55]{imagenes/nuevaConversFlujo.png}
+\caption{Diagrama de flujo nueva conversación}
+\label{nuevaConversFlujo}
+\end{center}
+\end{figure}
+
+No se ha indicado en el diagrama pero para el tratamiento JSON del fichero y para todas las operaciones JSON se utiliza la librería SimpleJSON \footnote{http://wiki.unity3d.com/index.php/SimpleJSON}.
+
+
+El punto de entrada es el click del jugador en un NPC. Previamente el NPC se habrá registrado en el ConversationManager, de forma que el NPC guarda en un delegado el método NewConversation(string) del ConversationManager.
+
+Cuando se le pide al ConversationManager que inicie una nueva conversación, el NPC le pasa por parámetro la ruta del fichero en la que está almacenado su diálogo con el personaje que está controlando el jugador en ese momento. El ConversationManager informará al JSONParser de que se debe iniciar una nueva conversación, y este será el encargado de leer y parsear el fichero o de abrir una de las conversaciones que tiene almacenadas.
+
+Una vez informado el JSONParser, el ConversationManager le pedirá el texto del nodo actual de la conversación y el texto de las posibles respuestas. Una vez tenga esa información se la pasará al UIManager que se encarga de la interacción con los elementos gráficos de la interfaz.
+
+En este arquitectura se ha seguido un diseño inspirado en el patrón Model-view-Controller \footnote{https://es.wikipedia.org/wiki/Modelo-vista-controlador}. Para ello todas las referencias a los elementos de la interfaz y los métodos de interacción con los mismos se han encapsulado en la clase llama UIManager. El acceso a los datos de las conversaciones, la gestión del estado de las mismas y la lectura de los ficheros de diálogos se guardan en la clase JSONParser, que además utiliza la librería SimpleJSON. En cuanto al punto de encuentro entre los datos y la interfaz, se emplea la clase ConversationManager para sincronizar las operaciones entre las otras dos clases y para proveer un punto de entrada al sistema de conversaciones.
+
+Una vez abierta la conversación es necesario actualizar el juego cada vez que el jugador selecciona una respuesta. El funcionamiento de esta mecánica es muy similar y utiliza los mismos componentes que el sistema anterior.
+En el siguiente diagrama de flujo (ver fig. \ref{respuestaFlujo}) se explica el proceso.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.55]{imagenes/respuestaFlujo.png}
+\caption{Diagrama de flujo de selección de respuesta}
+\label{respuestaFlujo}
+\end{center}
+\end{figure}
+
+\subsubsection{Sistema de escenarios}
+
+A lo largo del juego se puede navegar por diferentes escenarios. Por temas de eficiencia y debido a que cada escenario tiene características únicas se han agrupado según la temática. En lugar de tener un gran escenario con montones de mallas correspondientes a los edificios y los personajes, solo están activos los Gameobjects correspondientes al escenario actual, los demás están desactivados (que no eliminados). En los escenarios hay puertas que al ser clicadas transportan al personaje activo hacia el escenario al que conduce la puerta. 
+
+En el inspector de escena de Unity3D dichos escenarios lucen como se en la siguiente imagen (ver fig. \ref{unityScenarios}).
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1]{imagenes/unityScenarios.png}
+\caption{Vista de los escenarios en el inspector de Unity3D}
+\label{unityScenarios}
+\end{center}
+\end{figure}
+
+Como se puede observar algunos Gameobjects de la escena contienen scripts y componentes (otros Gameobjects tambien pero se han omitido para mayor simplicidad). En el siguiente diagrama de clases (ver fig. \ref{sceneClassDiagram}) se muestra la estructura de estos scripts y posteriormente se explicará su funcionamiento y utilidad.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.75]{imagenes/sceneClassDiagram.PNG}
+\caption{Diagrama de clases del sistema de escenarios}
+\label{sceneClassDiagram}
+\end{center}
+\end{figure}
+
+El elemento central de todo el sistema de escenarios es la puerta. El nombre del Gameobject puerta sigue una notación que indica el escenario destino y origen. En el caso de la imagen anterior (ver fig. \ref{unityScenarios}) se puede observar que la puerta lleva del Palacio (el escenario activo) a Las calles (un escenario desactivado).
+
+El método IPointerClickHandler.OnPointerClick(...), heredado de la interfaz IPointerClickHandler que provee Unity3D, es llamado cuando se hace click en el componente Collider asociado a la puerta. Posteriormente se comprobará que el click es válido (el jugador no está muy lejos por ejemplo) con el método heredado IsClickValid(). Finalmente se notificará al GameManager de que se quiere hacer un cambio de escena y se le suministrará el Gameobject que contiene la nueva escena y la posición de inicio para el jugador.
+
+El sistema de escenarios se encarga también de gestionar la pista de audio que se reproduce a modo de música ambiental. En el objeto raíz de cada escenario se encuentra un script que hace uso del método provisto por Unity3D, OnEnable(). Dicho método es llamado cada vez que se activa un escenario. Desde el método OnEnable() se notifica al SoundManager, que es accesible de forma global ya que implementa el patrón Singleton, el nuevo escenario activado. El SoundManager dispone de un clip de sonido por cada escenario y cuando recibe el tipo del nuevo escenario cambia el clip de sonido reproducido por el componente AudioSource.
+
+\subsubsection{Sistema de cambio de personajes}
+
+Durante el juego se puede cambiar
