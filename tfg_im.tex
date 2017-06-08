@@ -153,8 +153,6 @@ pdfproducer = {pdflatex}
 }
 %AQUI COMIENZA LA LISTA DE FICHEROS A INCLUIR
 
-
-
 \begin{document}
 \renewcommand{\listtablename}{Índice de tablas} %para sustituir la palabra cuadro por tabla
 \renewcommand{\tablename}{Tabla}
@@ -164,7 +162,7 @@ pdfproducer = {pdflatex}
 \frontmatter
 \input{portada/portada} %la portada en color
 \input{portada/portada_2} %la portada en b/n
-\input{capitulos/preliminares} %editar este texto (capitulos/preliminares.tex) para cambiar preámbulo, agradecimientos y dedicatorias
+\input{capitulos/preliminares} 
 \tableofcontents
 \listoffigures
 \listoftables
@@ -179,6 +177,7 @@ pdfproducer = {pdflatex}
 \input{capitulos/metodologia}
 \input{capitulos/desarrollo}
 \input{capitulos/resultados}
+\input{capitulos/pruebas}
 \input{capitulos/conclusiones}
 
 %\nocite{*} %incluye TODOS los documentos de la base de datos bibliográfica sean o no citados en el texto
@@ -187,7 +186,7 @@ pdfproducer = {pdflatex}
 \bibliographystyle{apalike}
 %
 \appendix
-\input{anexos/anexo_I}
+\input{anexos/GDD/GDD}
 %\input{glosario/entradas_glosario}
 % \addcontentsline{toc}{chapter}{Glosario} %si se usa glosario hay que añadirlo al índice
 % \printglossary %muestra el glosario

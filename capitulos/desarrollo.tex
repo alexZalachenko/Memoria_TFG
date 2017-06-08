@@ -66,6 +66,7 @@ Dichas mecánicas son activadas al detectarse cierto estímulo. Por ejemplo al p
 Al identificador de cada funcionalidad le acompañarán unas siglas (USR, UI, SYS) dependiendo de si dicha funcionalidad se refiere a mecánicas del usuario, la interfaz de usuario o al sistema.
 
 \subsection{Requisitos de usuario}
+\label{requisitosUsuario}
 
 \begin{table}[H]
 \centering
@@ -683,3 +684,11 @@ El elemento central de todo el sistema de escenarios es la puerta. El nombre del
 El método IPointerClickHandler.OnPointerClick(...), heredado de la interfaz IPointerClickHandler que provee Unity3D, es llamado cuando se hace click en el componente Collider asociado a la puerta. Posteriormente se comprobará que el click es válido (el jugador no está muy lejos por ejemplo) con el método heredado IsClickValid(). Finalmente se notificará al GameManager de que se quiere hacer un cambio de escena y se le suministrará el Gameobject que contiene la nueva escena y la posición de inicio para el jugador.
 
 El sistema de escenarios se encarga también de gestionar la pista de audio que se reproduce a modo de música ambiental. En el objeto raíz de cada escenario se encuentra un script que hace uso del método provisto por Unity3D, OnEnable(). Dicho método es llamado cada vez que se activa un escenario. Desde el método OnEnable() se notifica al SoundManager, que es accesible de forma global ya que implementa el patrón Singleton, el nuevo escenario activado. El SoundManager dispone de un clip de sonido por cada escenario y cuando recibe el tipo del nuevo escenario cambia el clip de sonido reproducido por el componente AudioSource.
+
+\subsection{Storytelling}
+
+El storytelling es una parte fundamental del videojuego creado. Uno de los aspectos que hacen diferente a Da Vinci Startup es que en lugar de saturar al usuario con insufribles lecciones de teoría sobre emprendimiento, se aprende a la vez que se juega. Eso no significa que el conocimiento técnico no esté presente. La diferencia es que el conocimiento se adquiere a lo largo de la historia que los NPCs cuentan y que el jugador experimenta. De este modo conceptos como el "networking" no son solo palabras en un manual, si no que el jugador deberá utilizarlo a lo largo del juego para lograr los objetivos que le llevarán a completar el mismo.
+
+
+En el \nameref{guionLiterario} contenido en el \nameref{GDD} se explica de forma narrativa la historia en la que se basa el videojuego. Es una historia ficticia en la que un mentor guía a Leonardo durante la construcción de la startup.
+
