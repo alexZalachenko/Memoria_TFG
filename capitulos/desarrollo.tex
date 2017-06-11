@@ -519,10 +519,10 @@ Los \textquote{Gameobjects} son la entidad fundamental en Unity3D: todos los ele
 
 En la siguiente imagen (ver fig. \ref{gameobjectComponents}) se puede observar los componentes que posee el \textquote{Gameobject} Leonardo. 
 
-\begin{figure}[H]
+\begin{figure}
 \begin{center}
-\includegraphics[scale=1]{imagenes/GameobjectsAndComponents.png}
-\caption{Vista del editor de Unity3D donde se pueden ver los componentes de un Gameobject}
+\includegraphics[scale=0.9]{imagenes/GameobjectsAndComponents.png}
+\caption{Vista del editor de Unity3D donde se pueden ver los componentes de un Gameobject.  Fuente: elaboración propia}
 \label{gameobjectComponents}
 \end{center}
 \end{figure}
@@ -532,10 +532,10 @@ Dichos componentes dotan a la entidad, que en este caso es el personaje controla
 
 En la siguiente imagen (ver fig. \ref{diagramaClasesUnity}) se puede observar un diagrama de clases que muestra la estructura que compone el sistema de componentes y los Gameobjects.
 
-\begin{figure}[H]
+\begin{figure}
 \begin{center}
 \includegraphics[scale=0.8]{imagenes/diagramaClasesUnity.png}
-\caption{Diagrama de clases de Unity3D}
+\caption{Diagrama de clases de Unity3D.  Fuente: elaboración propia}
 \label{diagramaClasesUnity}
 \end{center}
 \end{figure}
@@ -573,7 +573,7 @@ El ejemplo de bucle mostrado anteriormente es tremendamente básico pero sirve p
 
 En la siguiente imagen (ver fig. \ref{bucleUnity}) se puede observar el bucle de juego utilizado por el motor Unity3D, y evidentemente por el juego creado para este proyecto:
 
-\begin{figure}[H]
+\begin{figure}
 \begin{center}
 \includegraphics[scale=0.55]{imagenes/bucleUnity.png}
 \caption{Bucle de juego del motor Unity3D. Fuente: https://docs.unity3d.com/Manual/ExecutionOrder.html}
@@ -596,7 +596,7 @@ Los diálogos en lugar de estar insertados directamente en el código se almacen
 
 Cada diálogo es un archivo que sigue el formato JSON \footnote{https://geekytheory.com/json-i-que-es-y-para-que-sirve-json}. Las conversaciones tienen una estructura arbórea donde los nodos representan la parte del diálogo correspondiente al NPC y las ramas salientes de dicho nodo representan las posibles contestaciones. La representación de una conversación en el formato JSON sigue la estructura que se puede ver en la siguiente imagen (ver fig. \ref{jsonFormat}).
 
-\begin{figure}[H]
+\begin{figure}
 \begin{center}
 \includegraphics[scale=0.57]{imagenes/jsonFormat.png}
 \caption{Representación del formato utilizado para los ficheros de diálogo. Fuente: elaboración propia}
@@ -612,7 +612,7 @@ Las contestaciones se componen de el identificador del nodo al que conduce dicha
 
 Para la creación de los ficheros de diálogos se puede escribir el JSON manualmente rellenando con los datos deseados o se puede utilizar la herramienta inklewritter \footnote{http://www.inklestudios.com/inklewriter/}. Dicha herramienta presenta una forma más sencilla de escribir conversaciones de múltiple respuesta (ver fig. \ref{inklewritter}). Además cuenta con la posibilidad de exportar el trabajo final a un fichero de texto en formato JSON. El parser JSON del videojuego está construido específicamente para poder procesar los diálogos construidos con inklewritter.
 
-\begin{figure}[H]
+\begin{figure}
 \begin{center}
 \includegraphics[scale=0.7]{imagenes/inklewritter.png}
 \caption{Herramienta inklewritter. Fuente: elaboración propia}
@@ -624,7 +624,7 @@ Para explicar la arquitectura del sistema de conversaciones se emplearán sendos
 
 En el siguiente diagrama (ver fig. \ref{nuevaConversFlujo}) se ve el flujo de código necesario para iniciar una conversación. 
 
-\begin{figure}[H]
+\begin{figure}
 \begin{center}
 \includegraphics[scale=0.55]{imagenes/nuevaConversFlujo.png}
 \caption{Diagrama de flujo nueva conversación.  Fuente: elaboración propia}
@@ -646,7 +646,7 @@ En este arquitectura se ha seguido un diseño inspirado en el patrón Model-view
 Una vez abierta la conversación es necesario actualizar el juego cada vez que el jugador selecciona una respuesta. El funcionamiento de esta mecánica es muy similar y utiliza los mismos componentes que el sistema anterior.
 En el siguiente diagrama de flujo (ver fig. \ref{respuestaFlujo}) se explica el proceso.
 
-\begin{figure}[H]
+\begin{figure}
 \begin{center}
 \includegraphics[scale=0.55]{imagenes/respuestaFlujo.png}
 \caption{Diagrama de flujo de selección de respuesta.  Fuente: elaboración propia}
@@ -660,7 +660,7 @@ A lo largo del juego se puede navegar por diferentes escenarios. Por temas de ef
 
 En el inspector de escena de Unity3D dichos escenarios lucen como se en la siguiente imagen (ver fig. \ref{unityScenarios}).
 
-\begin{figure}[H]
+\begin{figure}
 \begin{center}
 \includegraphics[scale=1]{imagenes/unityScenarios.png}
 \caption{Vista de los escenarios en el inspector de Unity3D.  Fuente: elaboración propia}
@@ -670,7 +670,7 @@ En el inspector de escena de Unity3D dichos escenarios lucen como se en la sigui
 
 Como se puede observar algunos Gameobjects de la escena contienen scripts y componentes (otros Gameobjects tambien pero se han omitido para mayor simplicidad). En el siguiente diagrama de clases (ver fig. \ref{sceneClassDiagram}) se muestra la estructura de estos scripts y posteriormente se explicará su funcionamiento y utilidad.
 
-\begin{figure}[H]
+\begin{figure}
 \begin{center}
 \includegraphics[scale=0.75]{imagenes/sceneClassDiagram.PNG}
 \caption{Diagrama de clases del sistema de escenarios.  Fuente: elaboración propia}
