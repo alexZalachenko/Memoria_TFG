@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.11.8)  11 JUN 2017 15:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.11.8)  11 JUN 2017 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3288,6 +3288,12 @@ ena-[]pandemia . html$[][] [][]
  []
 
 
+Overfull \hbox (71.75763pt too wide) in paragraph at lines 8--8
+ [][] [][]\OT1/cmr/m/n/10.95 Captura de pan-ta-lla de iP-ho-ne con el jue-go Hi
+ps-ter CEO. Fuen-te: https://tech.co/hipster- 
+ []
+
+
 Overfull \hbox (111.69484pt too wide) in paragraph at lines 17--17
  [][] [][]\OT1/cmr/m/n/10.95 Bucle de jue-go del mo-tor Unity3D. Fuen-te: https
 ://docs.unity3d.com/Manual/ExecutionOrder.html[] [][]  
@@ -4138,30 +4144,36 @@ LaTeX Info: Redefining \% on input line 452.
 \openout5 = `tfg_im.lof'.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 170.
  [15]
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 171.
+
+LaTeX Info: Redefining \. on input line 171.
+LaTeX Info: Redefining \% on input line 171.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 171.
 Package babel Info: Redefining spanish shorthand >>
@@ -4186,10 +4198,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 171.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 171.
- [16
-
-
-] (./capitulos/Introduccion.tex
+[16] (./capitulos/Introduccion.tex
 chapter 1.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1.
@@ -4243,6 +4252,8 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 23.
 [1
+
+
 
 
 ]
@@ -4318,7 +4329,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 52.
 
-<imagenes/lienzo_lean_canvas.png, id=620, 1055.945pt x 793.96625pt>
+<imagenes/lienzo_lean_canvas.png, id=623, 1055.945pt x 793.96625pt>
 File: imagenes/lienzo_lean_canvas.png Graphic file (type png)
 
 <use imagenes/lienzo_lean_canvas.png>
@@ -4520,7 +4531,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 27.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 27.
-[7] <imagenes/catan.jpg, id=661, 1204.5pt x 1062.97125pt>
+[7] <imagenes/catan.jpg, id=664, 1204.5pt x 1062.97125pt>
 File: imagenes/catan.jpg Graphic file (type jpg)
 
 <use imagenes/catan.jpg>
@@ -4553,14 +4564,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 44.
  [8 <./imagenes/catan.jpg>]
-<imagenes/pandemia.jpg, id=676, 1606.0pt x 1116.17pt>
+<imagenes/pandemia.jpg, id=679, 1606.0pt x 1116.17pt>
 File: imagenes/pandemia.jpg Graphic file (type jpg)
 
 <use imagenes/pandemia.jpg>
 Package pdftex.def Info: imagenes/pandemia.jpg used on input line 47.
 (pdftex.def)             Requested size: 401.49902pt x 279.04181pt.
 
-<imagenes/fleaMarket.jpg, id=683, 912.208pt x 684.156pt>
+<imagenes/fleaMarket.jpg, id=686, 912.208pt x 684.156pt>
 File: imagenes/fleaMarket.jpg Graphic file (type jpg)
 
 <use imagenes/fleaMarket.jpg>
@@ -4631,7 +4642,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 69.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 69.
- [10 <./imagenes/fleaMarket.jpg>] <imagenes/hipster01.jpg, id=708, 642.4pt x 48
+ [10 <./imagenes/fleaMarket.jpg>] <imagenes/hipster01.jpg, id=711, 642.4pt x 48
 1.8pt>
 File: imagenes/hipster01.jpg Graphic file (type jpg)
 
@@ -4639,7 +4650,7 @@ File: imagenes/hipster01.jpg Graphic file (type jpg)
 Package pdftex.def Info: imagenes/hipster01.jpg used on input line 80.
 (pdftex.def)             Requested size: 385.44298pt x 289.08221pt.
 
-<imagenes/ustartup01.jpg, id=713, 602.25pt x 336.25626pt>
+<imagenes/ustartup01.jpg, id=716, 602.25pt x 336.25626pt>
 File: imagenes/ustartup01.jpg Graphic file (type jpg)
 
 <use imagenes/ustartup01.jpg>
@@ -4740,7 +4751,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 111.
 
-<imagenes/blueprints.png, id=732, 1062.97125pt x 417.05812pt>
+<imagenes/blueprints.png, id=735, 1062.97125pt x 417.05812pt>
 File: imagenes/blueprints.png Graphic file (type png)
 
 <use imagenes/blueprints.png>
@@ -4961,7 +4972,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 32.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 32.
-[17] <imagenes/GanttDiagram.jpg, id=777, 845.0772pt x 597.432pt>
+[17] <imagenes/GanttDiagram.jpg, id=780, 845.0772pt x 597.432pt>
 File: imagenes/GanttDiagram.jpg Graphic file (type jpg)
 
 <use imagenes/GanttDiagram.jpg>
@@ -5690,7 +5701,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 514.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 514.
-[30] <imagenes/GameobjectsAndComponents.png, id=893, 463.7325pt x 348.55219pt>
+[30] <imagenes/GameobjectsAndComponents.png, id=896, 463.7325pt x 348.55219pt>
 File: imagenes/GameobjectsAndComponents.png Graphic file (type png)
 
 <use imagenes/GameobjectsAndComponents.png>
@@ -5724,7 +5735,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 532.
  [31 <./imagenes/GameobjectsAndComponents.png>]
-<imagenes/diagramaClasesUnity.png, id=900, 542.77782pt x 462.22687pt>
+<imagenes/diagramaClasesUnity.png, id=903, 542.77782pt x 462.22687pt>
 File: imagenes/diagramaClasesUnity.png Graphic file (type png)
 
 <use imagenes/diagramaClasesUnity.png>
@@ -5790,7 +5801,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 568.
  [33 <./imagenes/diagramaClasesUnity.png>]
-<imagenes/bucleUnity.png, id=922, 779.91376pt x 1163.0953pt>
+<imagenes/bucleUnity.png, id=925, 779.91376pt x 1163.0953pt>
 File: imagenes/bucleUnity.png Graphic file (type png)
 
 <use imagenes/bucleUnity.png>
@@ -5816,7 +5827,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 587.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 587.
-<imagenes/jsonFormat.png, id=925, 753.5653pt x 501.37312pt>
+<imagenes/jsonFormat.png, id=928, 753.5653pt x 501.37312pt>
 File: imagenes/jsonFormat.png Graphic file (type png)
 
 <use imagenes/jsonFormat.png>
@@ -5908,14 +5919,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 610.
  [36 <./imagenes/jsonFormat.png>]
-<imagenes/inklewritter.png, id=943, 435.12563pt x 629.35126pt>
+<imagenes/inklewritter.png, id=946, 435.12563pt x 629.35126pt>
 File: imagenes/inklewritter.png Graphic file (type png)
 
 <use imagenes/inklewritter.png>
 Package pdftex.def Info: imagenes/inklewritter.png used on input line 617.
 (pdftex.def)             Requested size: 304.58586pt x 440.54288pt.
 
-<imagenes/nuevaConversFlujo.png, id=945, 736.25063pt x 375.65344pt>
+<imagenes/nuevaConversFlujo.png, id=948, 736.25063pt x 375.65344pt>
 File: imagenes/nuevaConversFlujo.png Graphic file (type png)
 
 <use imagenes/nuevaConversFlujo.png>
@@ -5976,14 +5987,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 645.
  [38 <./imagenes/inklewritter.png>]
-<imagenes/respuestaFlujo.png, id=960, 636.87938pt x 475.7775pt>
+<imagenes/respuestaFlujo.png, id=963, 636.87938pt x 475.7775pt>
 File: imagenes/respuestaFlujo.png Graphic file (type png)
 
 <use imagenes/respuestaFlujo.png>
 Package pdftex.def Info: imagenes/respuestaFlujo.png used on input line 651.
 (pdftex.def)             Requested size: 350.28474pt x 261.67842pt.
 
-<imagenes/unityScenarios.png, id=962, 420.06938pt x 255.95625pt>
+<imagenes/unityScenarios.png, id=965, 420.06938pt x 255.95625pt>
 File: imagenes/unityScenarios.png Graphic file (type png)
 
 <use imagenes/unityScenarios.png>
@@ -5994,7 +6005,7 @@ Overfull \hbox (1.8128pt too wide) in paragraph at lines 665--666
  [] 
  []
 
-<imagenes/sceneClassDiagram.PNG, id=964, 629.35126pt x 364.36125pt>
+<imagenes/sceneClassDiagram.PNG, id=967, 629.35126pt x 364.36125pt>
 File: imagenes/sceneClassDiagram.PNG Graphic file (type png)
 
 <use imagenes/sceneClassDiagram.PNG>
@@ -6195,27 +6206,27 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
-<imagenes/dialogo.png, id=1006, 779.91376pt x 439.6425pt>
+<imagenes/dialogo.png, id=1009, 779.91376pt x 439.6425pt>
 File: imagenes/dialogo.png Graphic file (type png)
 
 <use imagenes/dialogo.png>
 Package pdftex.def Info: imagenes/dialogo.png used on input line 9.
 (pdftex.def)             Requested size: 389.95593pt x 219.82071pt.
 
-<imagenes/escenarios.png, id=1008, 783.67781pt x 438.13687pt>
+<imagenes/escenarios.png, id=1011, 783.67781pt x 438.13687pt>
 File: imagenes/escenarios.png Graphic file (type png)
 
 <use imagenes/escenarios.png>
 Package pdftex.def Info: imagenes/escenarios.png used on input line 21.
 (pdftex.def)             Requested size: 391.83794pt x 219.06789pt.
 
-<imagenes/iu.png, id=1011, 785.18344pt x 441.90094pt>
+<imagenes/iu.png, id=1014, 785.18344pt x 441.90094pt>
 File: imagenes/iu.png Graphic file (type png)
  <use imagenes/iu.png>
 Package pdftex.def Info: imagenes/iu.png used on input line 31.
 (pdftex.def)             Requested size: 392.59076pt x 220.94992pt.
 
-<imagenes/titulo.png, id=1012, 783.67781pt x 441.90094pt>
+<imagenes/titulo.png, id=1015, 783.67781pt x 441.90094pt>
 File: imagenes/titulo.png Graphic file (type png)
 
 <use imagenes/titulo.png>
@@ -6480,7 +6491,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 16.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 16.
-<imagenes/leanCanvasDaVinciStartup.png, id=1043, 1424.32124pt x 698.61pt>
+<imagenes/leanCanvasDaVinciStartup.png, id=1046, 1424.32124pt x 698.61pt>
 File: imagenes/leanCanvasDaVinciStartup.png Graphic file (type png)
 
 <use imagenes/leanCanvasDaVinciStartup.png>
@@ -6687,7 +6698,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 106.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 106.
-<anexos/GDD/portadaGDDImagen.pdf, id=1062, 597.55246pt x 845.07718pt>
+<anexos/GDD/portadaGDDImagen.pdf, id=1065, 597.55246pt x 845.07718pt>
 File: anexos/GDD/portadaGDDImagen.pdf Graphic file (type pdf)
 
 <use anexos/GDD/portadaGDDImagen.pdf>
@@ -6700,7 +6711,7 @@ Package pdftex.def Info: anexos/GDD/portadaGDDImagen.pdf used on input line 110
 .
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<anexos/GDD/portadaGDDImagen.pdf, id=1065, page=1, 597.55246pt x 845.07718pt>
+<anexos/GDD/portadaGDDImagen.pdf, id=1068, page=1, 597.55246pt x 845.07718pt>
 File: anexos/GDD/portadaGDDImagen.pdf Graphic file (type pdf)
 
 <use anexos/GDD/portadaGDDImagen.pdf, page 1>
@@ -6895,7 +6906,7 @@ LaTeX Info: Redefining \. on input line 153.
 LaTeX Info: Redefining \% on input line 153.
 LaTeX Info: Redefining \. on input line 155.
 LaTeX Info: Redefining \% on input line 155.
- <anexos/GDD/GDD-img001.jpg, id=1084, 383.3595pt x 215.496pt>
+ <anexos/GDD/GDD-img001.jpg, id=1088, 383.3595pt x 215.496pt>
 File: anexos/GDD/GDD-img001.jpg Graphic file (type jpg)
 
 <use anexos/GDD/GDD-img001.jpg>
@@ -6981,7 +6992,7 @@ LaTeX Info: Redefining \% on input line 169.
 LaTeX Info: Redefining \. on input line 174.
 LaTeX Info: Redefining \% on input line 174.
 
-<anexos/GDD/GDD-img002.png, id=1100, 1088.56688pt x 319.94531pt>
+<anexos/GDD/GDD-img002.png, id=1103, 1088.56688pt x 319.94531pt>
 File: anexos/GDD/GDD-img002.png Graphic file (type png)
 
 <use anexos/GDD/GDD-img002.png>
@@ -7028,7 +7039,7 @@ LaTeX Info: Redefining \. on input line 190.
 LaTeX Info: Redefining \% on input line 190.
 LaTeX Info: Redefining \. on input line 192.
 LaTeX Info: Redefining \% on input line 192.
-<anexos/GDD/GDD-img003.png, id=1101, 241.65282pt x 444.15938pt>
+<anexos/GDD/GDD-img003.png, id=1104, 241.65282pt x 444.15938pt>
 File: anexos/GDD/GDD-img003.png Graphic file (type png)
 
 <use anexos/GDD/GDD-img003.png>
@@ -7090,7 +7101,7 @@ LaTeX Info: Redefining \% on input line 201.
 LaTeX Info: Redefining \. on input line 202.
 LaTeX Info: Redefining \% on input line 202.
 
-<anexos/GDD/GDD-img004.png, id=1109, 316.18124pt x 615.29875pt>
+<anexos/GDD/GDD-img004.png, id=1112, 316.18124pt x 615.29875pt>
 File: anexos/GDD/GDD-img004.png Graphic file (type png)
 
 <use anexos/GDD/GDD-img004.png>
@@ -7117,7 +7128,7 @@ LaTeX Info: Redefining \% on input line 207.
 LaTeX Info: Redefining \. on input line 209.
 LaTeX Info: Redefining \% on input line 209.
 
-<anexos/GDD/GDD-img005.png, id=1110, 201.75375pt x 395.22656pt>
+<anexos/GDD/GDD-img005.png, id=1113, 201.75375pt x 395.22656pt>
 File: anexos/GDD/GDD-img005.png Graphic file (type png)
 
 <use anexos/GDD/GDD-img005.png>
@@ -7178,7 +7189,7 @@ LaTeX Info: Redefining \% on input line 214.
 LaTeX Info: Redefining \. on input line 216.
 LaTeX Info: Redefining \% on input line 216.
 
-<anexos/GDD/GDD-img006.png, id=1117, 266.9975pt x 524.96124pt>
+<anexos/GDD/GDD-img006.png, id=1120, 266.9975pt x 524.96124pt>
 File: anexos/GDD/GDD-img006.png Graphic file (type png)
 
 <use anexos/GDD/GDD-img006.png>
@@ -7221,7 +7232,7 @@ LaTeX Info: Redefining \% on input line 239.
 LaTeX Info: Redefining \. on input line 241.
 LaTeX Info: Redefining \% on input line 241.
 
-<anexos/GDD/GDD-img007.png, id=1118, 556.32843pt x 481.8pt>
+<anexos/GDD/GDD-img007.png, id=1121, 556.32843pt x 481.8pt>
 File: anexos/GDD/GDD-img007.png Graphic file (type png)
 
 <use anexos/GDD/GDD-img007.png>
@@ -7283,7 +7294,7 @@ LaTeX Info: Redefining \% on input line 251.
 LaTeX Info: Redefining \. on input line 253.
 LaTeX Info: Redefining \% on input line 253.
 
-<anexos/GDD/GDD-img008.png, id=1125, 614.295pt x 323.2075pt>
+<anexos/GDD/GDD-img008.png, id=1128, 614.295pt x 323.2075pt>
 File: anexos/GDD/GDD-img008.png Graphic file (type png)
 
 <use anexos/GDD/GDD-img008.png>
@@ -7314,7 +7325,7 @@ LaTeX Info: Redefining \% on input line 263.
 LaTeX Info: Redefining \. on input line 264.
 LaTeX Info: Redefining \% on input line 264.
 
-<anexos/GDD/GDD-img009.png, id=1126, 450.9347pt x 231.86626pt>
+<anexos/GDD/GDD-img009.png, id=1129, 450.9347pt x 231.86626pt>
 File: anexos/GDD/GDD-img009.png Graphic file (type png)
 
 <use anexos/GDD/GDD-img009.png>
@@ -9451,7 +9462,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
 Here is how much of TeX's memory you used:
  14637 strings out of 493013
  225771 string characters out of 6136993
- 427615 words of memory out of 5000000
+ 427873 words of memory out of 5000000
  17510 multiletter control sequences out of 15000+600000
  11765 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -9470,10 +9481,10 @@ dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2016/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmtt9.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfo
 nts/latxfont/lasy10.pfb>
-Output written on tfg_im.pdf (86 pages, 9803464 bytes).
+Output written on tfg_im.pdf (86 pages, 9847555 bytes).
 PDF statistics:
- 1394 PDF objects out of 1440 (max. 8388607)
- 1212 compressed objects within 13 object streams
+ 1397 PDF objects out of 1440 (max. 8388607)
+ 1215 compressed objects within 13 object streams
  394 named destinations out of 1000 (max. 500000)
  910 words of extra memory for PDF output out of 10000 (max. 10000000)
 
