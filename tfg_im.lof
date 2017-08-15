@@ -6,7 +6,7 @@
 \contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Tablero del juego Pandemia. Fuente: Blog Estanter\IeC {\'\i }a de juegos. \url {http://estanteriadejuegos.blogspot.com.es/2013/12/resena-pandemia.html}\relax }}{9}{figure.caption.8}
 \contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Tablero del juego Flea market. Fuente: Tienda online Shopyourway. \url {http://www.shopyourway.com/articles/355984}\relax }}{10}{figure.caption.9}
 \contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Captura de pantalla de iPhone con el juego Hipster CEO. Fuente: https://tech.co/hipster-ceo-my-startup-got-acquired-for-10-million-2014-03\relax }}{12}{figure.caption.10}
-\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Vista del lean canvas en el juego U-startup. Fuente: elaboraci\IeC {\'o}n propia\relax }}{12}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Vista del lean canvas en el juego U-startup. Fuente: http://ustartup.es/\relax }}{12}{figure.caption.11}
 \contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Uso de blueprints en Unreal engine 4. Fuente: www.gamedev.es\relax }}{14}{figure.caption.12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -22,13 +22,13 @@
 \contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces Vista de los escenarios en el inspector de Unity3D. Fuente: elaboraci\IeC {\'o}n propia\relax }}{41}{figure.caption.55}
 \contentsline {figure}{\numberline {\relax 5.9}{\ignorespaces Diagrama de clases del sistema de escenarios. Fuente: elaboraci\IeC {\'o}n propia\relax }}{42}{figure.caption.56}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Jugador dialogando con NPC en Da Vinci Startu. Fuente: elaboraci\IeC {\'o}n propiap\relax }}{46}{figure.caption.59}
-\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Jugador en el escenario Calles de Florencia\relax }}{46}{figure.caption.60}
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Jugador dialogando con NPC en Da Vinci Startup. Fuente: elaboraci\IeC {\'o}n propia\relax }}{46}{figure.caption.59}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Jugador en el escenario Calles de Florencia. Fuente: elaboraci\IeC {\'o}n propia\relax }}{46}{figure.caption.60}
 \contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Interfaz de usuario durante la partida con los men\IeC {\'u}s desplegados. Fuente: elaboraci\IeC {\'o}n propia\relax }}{47}{figure.caption.61}
 \contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Men\IeC {\'u} principal del juego. Fuente: elaboraci\IeC {\'o}n propia\relax }}{47}{figure.caption.62}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 8.1}{\ignorespaces Lean canvas propuesto para este proyecto\relax }}{52}{figure.caption.63}
+\contentsline {figure}{\numberline {\relax 8.1}{\ignorespaces Lean canvas propuesto para este proyecto. Fuente: elaboraci\IeC {\'o}n propia\relax }}{52}{figure.caption.63}
 \addvspace {10\p@ }
 \select@language {spanish}
 \select@language {spanish}
@@ -68,6 +68,9 @@
 \select@language {spanish}
 \select@language {spanish}
 \select@language {spanish}
+\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Imagen del juego Deadlight. Fuente: http://webvyc.com/deadlight-el-juego-postapocaliptico-de-zombies-del-estudio-espanol-tequila-works/\relax }}{2}{figure.caption.73}
+\contentsline {figure}{\numberline {\relax A.2}{\ignorespaces Mockup con las pantallas del men\IeC {\'u} principal. Fuente: elaboraci\IeC {\'o}n propia\relax }}{2}{figure.caption.76}
+\contentsline {figure}{\numberline {\relax A.3}{\ignorespaces Mockup de la pantalla de logros. Fuente: elaboraci\IeC {\'o}n propia\relax }}{3}{figure.caption.78}
 \select@language {spanish}
 \select@language {spanish}
 \select@language {spanish}
@@ -97,6 +100,9 @@
 \select@language {spanish}
 \select@language {spanish}
 \select@language {spanish}
+\contentsline {figure}{\numberline {\relax A.4}{\ignorespaces Mockup de la pantalla de cr\IeC {\'e}ditos. Fuente: elaboraci\IeC {\'o}n propia\relax }}{4}{figure.caption.80}
+\contentsline {figure}{\numberline {\relax A.5}{\ignorespaces Mockup de la pantalla de opciones. Fuente: elaboraci\IeC {\'o}n propia\relax }}{4}{figure.caption.82}
+\contentsline {figure}{\numberline {\relax A.6}{\ignorespaces Mockup de la pantalla de otros juegos. Fuente: elaboraci\IeC {\'o}n propia\relax }}{5}{figure.caption.84}
 \select@language {spanish}
 \select@language {spanish}
 \select@language {spanish}
@@ -116,8 +122,9 @@
 \select@language {spanish}
 \select@language {spanish}
 \select@language {spanish}
-\select@language {spanish}
-\select@language {spanish}
+\contentsline {figure}{\numberline {\relax A.7}{\ignorespaces Mockup de la pantalla del juego. Fuente: elaboraci\IeC {\'o}n propia\relax }}{6}{figure.caption.86}
+\contentsline {figure}{\numberline {\relax A.8}{\ignorespaces Mockup de la pantalla de conversaci\IeC {\'o}n. Fuente: elaboraci\IeC {\'o}n propia\relax }}{6}{figure.caption.88}
+\contentsline {figure}{\numberline {\relax A.9}{\ignorespaces Mockup de la pantalla de pausa. Fuente: elaboraci\IeC {\'o}n propia\relax }}{7}{figure.caption.90}
 \select@language {spanish}
 \select@language {spanish}
 \select@language {spanish}
